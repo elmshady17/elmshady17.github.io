@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <script>
-var clicked = 0;
+document.getElementById("rectangle").addEventListener("click", one);
 
-onmousedown="0"
-
-object.onclick = function(){MouseClicked
-
-function MouseClicked(){
-onmousedown=1
-print(onmousedown)
-
+function one() {
+  print("It worked");
 }
-};
 
 </script>
 <html>
@@ -25,14 +18,14 @@ print(onmousedown)
         
         <style>
             .rectangle {
-                width: 80%px;
-                height: 60%px;
+                width: 600px;
+                height: 400px;
                 background-color: lightblue;
                 opacity: 0.5;
             }
             .rectangle:hover {
-                width: 80%px;
-                height: 60%px;
+                width: 600px;
+                height: 400px;
                 background-color: lightblue;
                 opacity: 1.0;
             }
