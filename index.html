@@ -1,37 +1,43 @@
 <!DOCTYPE html>
-<script>
-document.getElementById("rectangle").addEventListener("click", one);
-
-function one() {
-  print("It worked");
-}
-
-</script>
 <html>
     <head>
         <title>TableFinder</title>
     </head>
 
+
     <body>
         <h1>Where are you sitting?</h1>
-        <img src="images/TestImageForTableFinder.png" alt="Image of a rough layout of hilltop" width="98%" height="50%">
         
-        <style>
-            .rectangle {
-                width: 600px;
-                height: 400px;
-                background-color: lightblue;
-                opacity: 0.5;
-            }
-            .rectangle:hover {
-                width: 600px;
-                height: 400px;
-                background-color: lightblue;
-                opacity: 1.0;
-            }
-        </style>
-        <div class="rectangle", id="rectangle">
-        </div>
+        <div class="image - container">
+        <img src="images/TestImageForTableFinder.png" alt="Image of a rough layout of hilltop">
+        <div class="overlay"></div>
+        
+    </div>
 
+        <style>
+            .image container {
+                position: relative;
+                width: 500px;
+                height: 300px;
+            }
+ 
+            .image container img {
+                 width: 100%;
+                height: 100%;
+            }
+ 
+            .overlay {
+                position: absolute;
+                top: 200px;
+                left: 200px;
+                width: 30%;
+                height: 20%;
+                background-color: rgba(255, 0, 0, 0.374);
+            }
+            
+        
+
+        <!--Grid or Gridbox use divs in the grid put rectangles in the divs customize them how you want-->
+        
     </body>
 </html>
